@@ -1,1 +1,2 @@
-echo SPATH | tr ":" "\n" | wc -l
+#!/bin/bash
+echo $((' echo $PATH | grep -O ":/" | wc -l ' +1))
